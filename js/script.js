@@ -33,7 +33,7 @@ function quizCreator() {
         let div = document.createElement('div');
         div.classList.add('container-mid', 'hide');
 
-        countOfQuestion.innerHTML = 1 + ' of ' + quizArray.length + ' Questions';
+        countOfQuestion.innerHTML = 1 + ' de ' + quizArray.length + ' Preguntas';
 
         let question_DIV = document.createElement('p');
         question_DIV.classList.add('question',);
@@ -113,9 +113,9 @@ nextBtn.addEventListener('click', (displayNext = () => {
         displayContainer.classList.add('hide');
         scoreContainer.classList.remove('hide');
 
-        userScore.innerHTML = 'Your score is ' + scoreCount + ' out of ' + questionCount;
+        userScore.innerHTML = 'Tu puntuación fue de ' + scoreCount + ' sobre ' + questionCount + '.';
     } else {
-        countOfQuestion.innerHTML = questionCount + 1 + ' of ' + quizArray.length + ' Questions'
+        countOfQuestion.innerHTML = questionCount + 1 + ' de ' + quizArray.length + ' Preguntas'
     }
     
     count = 11;

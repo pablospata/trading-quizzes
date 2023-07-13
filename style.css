@@ -22,6 +22,17 @@ body {
     align-items: center;
 }
 
+.start-screen {
+    gap: 2em;
+}
+
+.start-screen h2 {
+    color: #ffffff;
+}
+.logo {
+    width: 300px;    
+}
+
 button {
     border: none;
     outline: none;
