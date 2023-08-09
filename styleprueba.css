@@ -1,0 +1,66 @@
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;      
+    padding: 2vw 0 8vw 0;
+    /* background-color: #f7f7f7; */    
+}
+
+.formulario h5 {
+    padding-bottom: 2rem;
+
+}
+
+.grid-form {
+    display: grid;
+    grid-column-gap: 90px; /* Espacio entre las columnas */
+    grid-row-gap: 2rem;    /* Espacio entre las filas */
+    grid-template-areas:
+        "nombre mail"
+        "telefono asunto"
+        "mensaje mensaje"
+        "button button";  /* Cambio para el botón */
+        justify-items: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;     /* Centrar verticalmente */
+    grid-area: button;      /* Nuevo nombre para el área */
+}
+
+input {
+    height: 63px;
+    width: 100%;   /* 100% para que tome todo el espacio de la celda */
+    border: none;
+    background-color: #edf3f6;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 0;
+    outline: none;
+    font-size: 14px;    
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea {
+    grid-area: mensaje;
+    font-size: 14px;
+    color: var(--conult-gray);
+    height: 180px;
+    width: 100%;   /* 100% para que tome todo el espacio de la celda */
+    background-color: #edf3f6;
+    padding: 18px 30px 30px;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    margin-top: 20px; /* Espacio entre el botón y el textarea */
+}
