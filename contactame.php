@@ -1,7 +1,12 @@
 <?php
+
+
 // Verifica si los datos del formulario han sido enviados por POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
+    ini_set('display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
     // Recopila los datos del formulario
     $nombre = $_POST['name'];
     $email = $_POST['email'];
@@ -30,5 +35,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Hubo un error al enviar el mensaje. Inténtalo nuevamente.";
     }
 }
-?>
-
